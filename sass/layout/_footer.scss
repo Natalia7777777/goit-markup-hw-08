@@ -5,12 +5,27 @@
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+  @include tab {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
 }
 
 .footer-contacts {
-  flex-grow: 1;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 165px;
+  }
+
+  @include desk {
+    flex-grow: 1;
+  }
 }
 
 .footer-contacts__logo {
@@ -18,7 +33,7 @@
 }
 
 .contacts__item:not(:first-child) {
-  margin-top: 9px;
+  margin-top: 8px;
 }
 
 .contacts__link {
@@ -34,8 +49,11 @@
 }
 
 .footer-social {
-  margin-left: 70px;
-  margin-right: 93px;
+  margin-bottom: 60px;
+  @include desk {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
 }
 
 .footer-social__text {
