@@ -123,7 +123,24 @@
                     <h2 class="section__title section__title--margin-bottom">Наша команда</h2>
                     <ul class="team">
                         <li class="team__item">
-                            <img src="./images/our-team/img-team-1.jpg" alt="Дизайнер1" width="270" height="260">
+                            <picture>
+                                <source 
+                                    srcset="./images/our-team/img-team-1.jpg 1x, 
+                                    ./images/our-team/img-team-1-2x.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                />
+                                <source 
+                                    srcset="./images/our-team/img-team-tab-1.jpg 1x, 
+                                    ./images/our-team/img-team-tab-1-2x.jpg 2x"
+                                    media="(min-width: 768px)"
+                                />
+                                <source 
+                                    srcset="./images/our-team/img-team-mob-1.jpg 1x, 
+                                    ./images/our-team/img-team-mob-1-2x.jpg 2x" 
+                                    media="(min-width: 480px)"
+                                />
+                                <img src="./images/our-team/img-team-1.jpg" alt="Дизайнер1">
+                            </picture>
                             <div class="team__member">
                                 <h3 class="team__title">Игорь Демьяненко</h3>
                                 <p lang="en" class="team__text">Product Designer</p>
@@ -160,7 +177,24 @@
                             </div>
                         </li>
                         <li class="team__item">
-                            <img src="./images/our-team/img-team-2.jpg" alt="Фронтент-разработчик" width="270" height="260">
+                            <picture>
+                                <source 
+                                    srcset="./images/our-team/img-team-2.jpg 1x, 
+                                    ./images/our-team/img-team-2-2x.jpg 2x" 
+                                    media="(min-width: 1200px)"
+                                />
+                                <source 
+                                    srcset="./images/our-team/img-team-tab-2.jpg 1x, 
+                                    ./images/our-team/img-team-tab-2-2x.jpg 2x" 
+                                    media="(min-width: 768px)"
+                                />
+                                <source 
+                                    srcset="./images/our-team/img-team-mob-2.jpg 1x, 
+                                    ./images/our-team/img-team-mob-2-2x.jpg 2x" 
+                                    media="(min-width: 480px)"
+                                />
+                                <img src="./images/our-team/img-team-2.jpg" alt="Фронтент-разработчик">
+                            </picture>
                             <div class="team__member">
                                 <h3 class="team__title">Ольга Репина</h3>
                                 <p lang="en" class="team__text">Frontend Developer</p>
@@ -197,7 +231,24 @@
                             </div>
                         </li>
                         <li class="team__item">
-                            <img src="./images/our-team/img-team-3.jpg" alt="Маркетолог" width="270" height="260">
+                            <picture>
+                                <source 
+                                    srcset="./images/our-team/img-team-3.jpg 1x, 
+                                    ./images/our-team/img-team-3-2x.jpg 2x" 
+                                    media="(min-width: 1200px)"
+                                />
+                                <source 
+                                    srcset="./images/our-team/img-team-tab-3.jpg 1x, 
+                                    ./images/our-team/img-team-tab-3-2x.jpg 2x" 
+                                    media="(min-width: 768px)"
+                                    />
+                                <source 
+                                    srcset="./images/our-team/img-team-mob-3.jpg 1x, 
+                                    ./images/our-team/img-team-mob-3-2x.jpg 2x" 
+                                    media="(min-width: 480px)"
+                                    />
+                                <img src="./images/our-team/img-team-3.jpg" alt="Маркетолог">
+                            </picture>
                             <div class="team__member">
                                 <h3 class="team__title">Николай Тарасов</h3>
                                 <p lang="en" class="team__text">Marketing</p>
@@ -234,7 +285,24 @@
                             </div>
                         </li>
                         <li class="team__item">
-                            <img src="./images/our-team/img-team-4.jpg" alt="Дизайнер2" width="270" height="260">
+                            <picture>
+                                <source 
+                                    srcset="./images/our-team/img-team-4.jpg 1x, 
+                                    ./images/our-team/img-team-4-2x.jpg 2x" 
+                                    media="(min-width: 1200px)"
+                                />
+                                <source 
+                                    srcset="./images/our-team/img-team-tab-4.jpg 1x, 
+                                    ./images/our-team/img-team-tab-4-2x.jpg 2x" 
+                                    media="(min-width: 768px)"
+                                />
+                                <source 
+                                    srcset="./images/our-team/img-team-mob-4.jpg 1x, 
+                                    ./images/our-team/img-team-mob-4-2x.jpg 2x" 
+                                    media="(min-width: 480px)"
+                                />
+                                <img src="./images/our-team/img-team-4.jpg" alt="Дизайнер2">
+                            </picture>
                             <div class="team__member">
                                 <h3 class="team__title">Михаил Ермаков</h3>
                                 <p lang="en" class="team__text">UI Designer</p>
@@ -385,7 +453,7 @@
                 </div>
             </div>
         </footer>
-        <!-- <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button type="button" class="modal__close-btn" data-modal-close>
                     <svg class="close-btn__icon" width="18" height="18">
@@ -437,7 +505,7 @@
                     <div class="modal__form-btn"><button type="submit" class="modal__sumbit-btn">Отправить</button></div>
                 </form>
             </div>
-        </div> -->
+        </div>
 
         <script src="./js/modal.js"></script>
     </body>

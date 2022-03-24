@@ -21,8 +21,8 @@
 
 .modal {
   position: absolute;
-  width: 528px;
-  min-height: 581px;
+  width: 100%;
+  min-height: 609px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -34,6 +34,15 @@
   border-radius: 4px;
   visibility: visible;
   padding: 40px;
+
+  @include tel {
+    width: 450px;
+  }
+
+  @include desk {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal__close-btn {
@@ -64,6 +73,10 @@
   letter-spacing: 0.03em;
   color: var(--first-title-color);
   margin-bottom: 12px;
+
+  @include desk {
+    line-height: calc(30 / 20);
+  }
 }
 
 .modal__field {
@@ -144,13 +157,18 @@
 }
 
 .modal__check-text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   color: var(--first-text-color);
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include desk {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 }
 
 .modal__check-text span {
