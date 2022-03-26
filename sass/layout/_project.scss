@@ -67,7 +67,7 @@
 }
 
 .project__item {
-  width: 450px;
+  max-width: 450px;
   &:not(:last-child) {
     margin-bottom: 30px;
   }
