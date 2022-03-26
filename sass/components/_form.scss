@@ -10,9 +10,18 @@
 
 .footer-form {
   display: flex;
-  justify-content: space-around;
-  align-items: baseline;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+  }
+
+  @include desk {
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }
 
 .user-mail-footer {
