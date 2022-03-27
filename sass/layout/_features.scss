@@ -47,6 +47,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--first-title-color);
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .features__text {

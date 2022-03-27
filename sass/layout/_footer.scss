@@ -14,15 +14,13 @@
     align-items: baseline;
     flex-wrap: wrap;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: space-around;
+  }
 }
 
 .footer-contacts {
-  margin-bottom: 60px;
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-right: 165px;
-  }
-
   @include desk {
     flex-grow: 1;
   }
@@ -49,7 +47,6 @@
 }
 
 .footer-social {
-  margin-bottom: 60px;
   @include desk {
     margin-left: 70px;
     margin-right: 93px;

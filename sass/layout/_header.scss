@@ -1,5 +1,5 @@
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
   background-color: var(--first-bg-color);
 
   font-weight: 500;
@@ -147,7 +147,7 @@
 }
 
 .mob-menu.is-hidden .mob-menu-container {
-  transform: translate(-50%, -50%) scale(0.7);
+  transform: scale(0.5);
 }
 
 .mob-menu-container {

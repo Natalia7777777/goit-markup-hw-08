@@ -1,3 +1,9 @@
+.application {
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+  }
+}
+
 .application__text {
   font-weight: 700;
   font-size: 14px;
