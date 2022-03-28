@@ -47,6 +47,9 @@
 }
 
 .footer-social {
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
   @include desk {
     margin-left: 70px;
     margin-right: 93px;
